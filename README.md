@@ -20,20 +20,41 @@ This project focuses on modeling the Annual Energy Yield (AEP) of wind turbines 
 
 The simulation results provide estimates of the AEP for wind speeds and directions extracted from location site. The visualizations help in understanding the potential energy yield of the wind turbine in the given location.
 
+### Wind Farm Layout and AEP per Turbine
+
 ![AEP per turbine](./aep_per_turbine.png)
+
+**Description:** This plot illustrates the layout of the wind farm and the Annual Energy Production (AEP) per turbine. AEP is measured in megawatt-hours (MWh) and indicates the energy yield of each turbine over a year.
+
+**Key Elements**:
+
+Wind Turbines: Each point represents a wind turbine, positioned according to their coordinates.
+
+AEP Values: The color of each point represents the AEP for that specific turbine, with a gradient indicating different levels of energy production.
+
+Color Gradient: The color bar on the right shows the AEP range in MWh. Darker colors indicate lower AEP, while lighter colors show higher AEP.
+
+Axes: The x-axis and y-axis represent the coordinates in meters (m).
+
+Insight: This plot provides a clear view of which turbines are producing more or less energy. Factors influencing AEP include the wind speed at each turbine's location and the wake effect from upstream turbines. By analyzing this layout, one can optimize the positioning of turbines to maximize overall energy production.
+
 
 ### Wake Map
 
 ![Wake map](./wake_map.png)
 
-Description: The wake map provides a visual representation of the wind flow and the resulting wake effect from each wind turbine in the wind farm. The wake effect occurs when the wind passing through the rotor blades of a wind turbine loses speed and causes a reduction in energy for downstream turbines.
+**Description:** The wake map provides a visual representation of the wind flow and the resulting wake effect from each wind turbine in the wind farm. The wake effect occurs when the wind passing through the rotor blades of a wind turbine loses speed and causes a reduction in energy for downstream turbines.
 
-Key Elements:
+**Key Elements:**
 
 Wind Turbines: Each circle represents a wind turbine, numbered accordingly.
+
 Wake Zones: The shaded areas behind each turbine show the regions affected by the wake, where wind speeds are reduced.
+
 Wind Speed Gradient: The color gradient on the right indicates the wind speed in meters per second (m/s). Darker shades represent lower wind speeds, and lighter shades indicate higher speeds.
+
 Axes: The x-axis and y-axis represent the coordinates in meters (m), indicating the layout of the wind farm.
+
 Insight: This map helps in understanding how the placement of turbines affects their performance. Turbines placed directly behind others are subject to reduced wind speeds, which can decrease their energy output due to the wake effect.
 
 
